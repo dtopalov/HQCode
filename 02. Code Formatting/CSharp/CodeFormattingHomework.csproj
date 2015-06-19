@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\StyleCopPlus.MSBuild.4.7.49.5\build\StyleCopPlus.MSBuild.props" Condition="Exists('packages\StyleCopPlus.MSBuild.4.7.49.5\build\StyleCopPlus.MSBuild.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{F67F96C8-72B5-4633-9704-310D5ECF3D6C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>CodeFormattingHomework</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CodeFormattingHomework.MainProgram</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PowerCollections, Version=1.0.2141.24679, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\XAct.Wintellect.PowerCollections.0.0.1\lib\net20\PowerCollections.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Event.cs" />
+    <Compile Include="EventHolder.cs" />
+    <Compile Include="MainProgram.cs" />
+    <Compile Include="Messages.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="packages\StyleCop.MSBuild.4.7.49.0\build\StyleCop.MSBuild.Targets" />
+    <None Include="packages\StyleCop.MSBuild.4.7.49.0\StyleCop.MSBuild.4.7.49.nupkg" />
+    <None Include="packages\StyleCop.MSBuild.4.7.49.0\tools\mssp7en.lex" />
+    <None Include="packages\StyleCop.MSBuild.4.7.49.0\tools\Settings.StyleCop" />
+    <None Include="packages\StyleCopPlus.MSBuild.4.7.49.5\build\StyleCopPlus.MSBuild.props" />
+    <None Include="packages\StyleCopPlus.MSBuild.4.7.49.5\StyleCopPlus.MSBuild.4.7.49.5.nupkg" />
+    <None Include="packages\XAct.Wintellect.PowerCollections.0.0.1\XAct.Wintellect.PowerCollections.0.0.1.nupkg" />
+    <None Include="Settings.StyleCop" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.4.5">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 4.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\license.txt" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\CustomDictionary.en-GB.xml" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\CustomDictionary.en-US.xml" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\CustomDictionary.xml" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\de-DE\StyleCop.CSharp.Rules.resources.dll" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\en-GB\StyleCop.CSharp.Rules.resources.dll" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\fr-FR\StyleCop.CSharp.Rules.resources.dll" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\mssp7en.dll" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\pl-PL\StyleCop.CSharp.Rules.resources.dll" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\pt-BR\StyleCop.CSharp.Rules.resources.dll" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\ru-RU\StyleCop.CSharp.Rules.resources.dll" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\StyleCop.CSharp.dll" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\StyleCop.CSharp.Rules.dll" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\StyleCop.dll" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\tools\StyleCopSettingsEditor.exe" />
+    <Content Include="packages\StyleCop.MSBuild.4.7.49.0\[Content_Types].xml" />
+    <Content Include="packages\StyleCopPlus.MSBuild.4.7.49.5\tools\StyleCopPlus.dll" />
+    <Content Include="packages\StyleCopPlus.MSBuild.4.7.49.5\[Content_Types].xml" />
+    <Content Include="packages\XAct.Wintellect.PowerCollections.0.0.1\contents\NewGet.ReadMe\Licenses\Wintellect.PowerCollections.License.txt" />
+    <Content Include="packages\XAct.Wintellect.PowerCollections.0.0.1\lib\net20\PowerCollections.dll" />
+    <Content Include="packages\XAct.Wintellect.PowerCollections.0.0.1\lib\net20\PowerCollections.XML" />
+    <Content Include="packages\XAct.Wintellect.PowerCollections.0.0.1\[Content_Types].xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+  <Import Project="packages\StyleCop.MSBuild.4.7.49.0\build\StyleCop.MSBuild.Targets" Condition="Exists('packages\StyleCop.MSBuild.4.7.49.0\build\StyleCop.MSBuild.Targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\StyleCop.MSBuild.4.7.49.0\build\StyleCop.MSBuild.Targets')" Text="$([System.String]::Format('$(ErrorText)', 'packages\StyleCop.MSBuild.4.7.49.0\build\StyleCop.MSBuild.Targets'))" />
+    <Error Condition="!Exists('packages\StyleCopPlus.MSBuild.4.7.49.5\build\StyleCopPlus.MSBuild.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\StyleCopPlus.MSBuild.4.7.49.5\build\StyleCopPlus.MSBuild.props'))" />
+  </Target>
+</Project>
