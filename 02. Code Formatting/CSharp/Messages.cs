@@ -9,10 +9,7 @@
 
 		public static StringBuilder Output
 		{
-			get
-			{
-				return s_output;
-			}
+			get { return s_output; }
 		}
 
 		public static void EventAdded()
