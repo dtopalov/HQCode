@@ -1,8 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 
 public class AssertionsHomework
 {
+    /// <exception cref="OverflowException">The array is multidimensional and contains more than <see cref="F:System.Int32.MaxValue" /> elements.</exception>
     public static void SelectionSort<T>(T[] arr) where T : IComparable<T>
     {
         Debug.Assert(IsArrayValid(arr, 2), "Array cannot be null and should contain at least 2 elements to be sorted");
@@ -14,9 +17,11 @@ public class AssertionsHomework
         }
     }
 
+    /// <exception cref="OverflowException">The array is multidimensional and contains more than <see cref="F:System.Int32.MaxValue" /> elements.</exception>
     public static int BinarySearch<T>(T[] arr, T value) where T : IComparable<T>
     {
         Debug.Assert(IsArrayValid(arr, 1), "Array cannot be null or empty");
+        Debug.Assert(IsSorted(arr), "Binary search works correctly with sorted arrays only");
         return BinarySearch(arr, value, 0, arr.Length - 1);
     }
 
@@ -80,6 +85,17 @@ public class AssertionsHomework
             return false;
         }
         return true;
+    }
+
+    private static bool IsSorted<T>(IEnumerable<T> list) where T : IComparable<T>
+    {
+        var y = list.First();
+        return list.Skip(1).All(x =>
+        {
+            bool b = y.CompareTo(x) < 0;
+            y = x;
+            return b;
+        });
     }
 
     private static void Main()
