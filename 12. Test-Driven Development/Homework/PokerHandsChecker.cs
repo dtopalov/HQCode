@@ -388,7 +388,7 @@ namespace Poker
                     x => x.Face != theFirstPairOfTheSecondHandType.Face && x.Face != theSecondPairOfTheSecondHandType.Face)
                     .First();
 
-            return this.CompareFaceStrength(theFirstPairOfTheFirstHandType, theRemainingCardInTheSecondHand);
+            return this.CompareFaceStrength(theRemainingCardInTheFirstHand, theRemainingCardInTheSecondHand);
         }
 
         private int MaxNumberOfSameCards(IHand hand)
