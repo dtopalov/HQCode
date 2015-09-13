@@ -110,4 +110,4 @@ namespace PrototypePattern
 }
 ```
 
-This is [on GitHub](https://github.com/jbt/markdown-editor).
+This is [on GitHub](https://github.com/dtopalov/HQCode/blob/master/DesignPatterns/CreationalPatterns/prototype-pattern.md).
