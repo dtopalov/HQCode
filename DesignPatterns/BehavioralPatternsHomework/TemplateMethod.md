@@ -69,4 +69,4 @@ public class PackageB : Trip {
         }
 }
 ```
-This is [on GitHub](https://github.com/dtopalov/HQCode/blob/master/DesignPatterns/BehavioralPatterns/TemplateMethod.md).
+This is [on GitHub](https://github.com/dtopalov/HQCode/blob/master/DesignPatterns/BehavioralPatternsHomework/TemplateMethod.md).

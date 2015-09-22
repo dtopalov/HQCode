@@ -107,4 +107,4 @@ interface IObserver
   void Update();
 }
 ```
-This is [on GitHub](https://github.com/dtopalov/HQCode/blob/master/DesignPatterns/BehavioralPatterns/Observer.md).
+This is [on GitHub](https://github.com/dtopalov/HQCode/blob/master/DesignPatterns/BehavioralPatternsHomework/Observer.md).

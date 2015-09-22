@@ -117,4 +117,4 @@ public static class Caretaker<T>
     }
 }
 ```
-This is [on GitHub](https://github.com/dtopalov/HQCode/blob/master/DesignPatterns/BehavioralPatterns/Memento.md).
+This is [on GitHub](https://github.com/dtopalov/HQCode/blob/master/DesignPatterns/BehavioralPatternsHomework/Memento.md).

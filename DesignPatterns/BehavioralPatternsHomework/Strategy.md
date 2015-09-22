@@ -125,4 +125,4 @@ public class HeapSort : ISortingStrategy
    #endregion
 }
 ```
-This is [on GitHub](https://github.com/dtopalov/HQCode/blob/master/DesignPatterns/BehavioralPatterns/Strategy.md).
+This is [on GitHub](https://github.com/dtopalov/HQCode/blob/master/DesignPatterns/BehavioralPatternsHomework/Strategy.md).
